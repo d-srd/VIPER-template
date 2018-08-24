@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MVVM</string>
+	<string>VIPER</string>
 	<key>Description</key>
-	<string>This generates a new RxMVVM scene. It consists of the view controller, view and view model.</string>
+	<string>This generates a new VIPER scene. It consists of all the fun VIPERy stuff.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -82,6 +82,6 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>This generates a new RxMVVM scene.</string>
+	<string>This generates a new VIPER scene.</string>
 </dict>
 </plist>
