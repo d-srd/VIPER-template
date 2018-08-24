@@ -8,9 +8,23 @@
 
 import Foundation
 
-class ___VARIABLE_sceneName___ViewModel: BaseViewModel { 
-    var navigationService: NavigationService!
-    var networking: AlamofireNetworking!
+class ___VARIABLE_sceneName___Configurator { 
+
+    // MARK: - Object Lifecycle
+    static let sharedInstance = ___VARIABLE_sceneName___Configurator()
     
-    required init() {}
+    // MARK: - Configuration
+    func configure(_ viewController: ___VARIABLE_sceneName___ViewController) {
+        let router = ___VARIABLE_sceneName___Router()
+        router.viewController = viewController
+
+        let presenter = ___VARIABLE_sceneName___Presenter()
+        presenter.output = viewController
+
+        let interactor = ___VARIABLE_sceneName___Interactor()
+        interactor.output = presenter
+
+        viewController.output = interactor
+        viewController.router = router
+    }
 }
