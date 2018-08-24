@@ -5,5 +5,5 @@ if [ ! -d ~/Library/Developer/Xcode/Templates ]; then
     mkdir ~/Library/Developer/Xcode/Templates
 fi
 
-ln -s $PWD/templates/ ~/Library/Developer/Xcode/Templates/
+cp -r $PWD/templates/ ~/Library/Developer/Xcode/Templates/
 echo "Install complete. Please restart XCode (if applicable)."
