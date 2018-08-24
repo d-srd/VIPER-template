@@ -6,12 +6,13 @@
 //  ___COPYRIGHT___
 //
 
-import UIKit
+import Foundation
 
-class ___VARIABLE_sceneName___Presenter: BasePresenter {
-    weak var viewController: ___VARIABLE_sceneName___ViewController! {
-        return baseViewController as! ___VARIABLE_sceneName___ViewController
-    }
+protocol ___VARIABLE_sceneName___PresenterOutput: AnyObject {
+}
 
-    required init() {}
+class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___InteractorOutput {
+    weak var output: ___VARIABLE_sceneName___PresenterOutput?
+
+    // MARK: - Presentation Logic
 }
