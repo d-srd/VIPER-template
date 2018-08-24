@@ -8,17 +8,24 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: BaseViewController {
-    var viewModel: ___VARIABLE_sceneName___ViewModel! {
-        return baseViewModel as! ___VARIABLE_sceneName___ViewModel
-    }
+protocol ___VARIABLE_sceneName___ViewControllerOutput {
+}
 
-    var presenter: ___VARIABLE_sceneName___Presenter! {
-        return basePresenter as! ___VARIABLE_sceneName___Presenter
+class ___VARIABLE_sceneName___ViewController: UIViewController {
+
+    var output: ___VARIABLE_sceneName___ViewControllerOutput!
+    var router: ___VARIABLE_sceneName___Router!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        ___VARIABLE_sceneName___Configurator.sharedInstance.configure(self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+}
+
+extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___PresenterOutput {
 }
