@@ -13,8 +13,13 @@ protocol ___VARIABLE_sceneName___ViewControllerOutput {
 
 class ___VARIABLE_sceneName___ViewController: UIViewController {
 
+    // MARK: - Properties
+
     var output: ___VARIABLE_sceneName___ViewControllerOutput!
     var router: ___VARIABLE_sceneName___Router!
+
+
+    // MARK: - Lifecycle Events
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +28,6 @@ class ___VARIABLE_sceneName___ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
 
